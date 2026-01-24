@@ -10,12 +10,18 @@
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+font-family: Verdana, Geneva, Tahoma, sans-serif
+
         }
 
         header {
             padding: 20px;
 
-            background-color: blue;
+            background-color: rgb(79, 103, 208);
             display: flex;
             justify-content: space-around;
         }
@@ -26,16 +32,80 @@
         }
 
         ul li {
+            margin-left: 10px;
+            margin-right: 10px;
             display: inline-block;
         }
 
-        a {
-            color: white
-        } 
+        nav a {
+            color: white;
+        font-size: 14px;
+        font-weight: lighter;
+           
+            
+        }
+        
+        .login-btn {
+            background-color: black;
+            padding: 5px 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-left: 12px;
 
-        h2{
+        }
+
+       header h2{
 
             color: yellow;
+        }
+        .container{
+            padding-left: 18%;
+            padding-right: 18%;
+            padding-top: 50px;
+        }
+
+        #hero {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        #hero div {
+            width: 50%;
+            
+        }
+
+        #hero-img {
+            background-color: rgb(175, 196, 242);
+            border-radius: 20px;
+            height: 350px;
+        }
+
+        #hero-left {
+            
+          
+        }
+
+        #hero-left h1 {
+            margin-bottom: 40px;
+        }
+
+        #hero-left p {
+            text-align: left;
+        }
+
+        #hero-left a {
+            background-color: black;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: rgb(246, 246, 247);
+
+        } 
+
+        #hero-left div{
+            margin-top: 30px;
+
+
         }
 
     </style>
@@ -55,12 +125,35 @@
 
             </ul>
 
-            <a href="">Login</a>
+            <a class="login-btn" href="">Login</a>
+              <a class="login-btn" href="">Sign up</a>
 
         </nav>
     </header>
 
-    <h2>Purchase your mobile data here !!</h2>
+  <main class="container"> 
+      <!-- <marquee><h2>Purchase your mobile data here !!</h2></marquee> -->
+    <!-- hero section -->
+    <section id="hero">
+        <div id="hero-left">
+            <h1>Your VTU services at your fingertips</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptatum delectus explicabo cum incidunt accusantium illo</p>
+
+            <div>
+                <a href="">Login</a>
+                <a href="">Sign Up</a>
+            </div>
+
+        </div>
+        <div id="hero-img">
+            <h3>Something goes here</h3>
+        </div>
+    </section>
+    <!-- hero section ends here -->
+      
+  </main>
+
+
 </body>
 
 </html>
